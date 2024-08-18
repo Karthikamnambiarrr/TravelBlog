@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camels & Chocolate</title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Playwrite+BE+WAL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png"
+    href="https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.camelsandchocolate.com&client=VFE&size=64&type=FAVICON&fallback_opts=TYPE,SIZE,URL&nfrp=2">
+
+  <style>
+    * {
+      font-family: "DM Serif Text", serif;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: 800px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 800px;
+    }
+
+    #home ul li a {
+      text-decoration: none;
+      color: white;
+
+
+    }
+
+    #home {
+      padding-top: 30px;
+    }
+
+    #home ul li a:hover {
+      color: brown;
+    }
+
+    #icon ul li a {
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    #para1 {
+      margin: 100px 200px 30px 200px;
+      color: palevioletred;
+      font-family: "Dancing Script", cursive;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .next {
+      margin-top: 60px;
+    }
+
+    .para2 {
+
+      background-image: url(https://e0.pxfuel.com/wallpapers/391/840/desktop-wallpaper-red-damask-burgundy-and-gold.jpg);
+      background-position: cover;
+      height: 250px;
+      width: 100%;
+      color: #ffffff;
+      padding: 50px;
+      text-align: center;
+    }
+
+    #para4 {
+      background-image: url(https://cdn.pixabay.com/photo/2017/08/29/12/07/adult-2693054_1280.jpg);
+      background-position: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
+      width: 100%;
+      margin-top: 100px;
+      font-family: "Dancing Script", cursive;
+
+    }
+
+    #para5 {
+      background-image: url(https://cdn.pixabay.com/photo/2015/06/02/00/54/pink-794507_640.jpg);
+      background-position: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 50px;
+    }
+
+    #para6 {
+      background-image: url(https://cdn.pixabay.com/photo/2015/07/27/20/23/couple-863456_640.jpg);
+      background-position: center center;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      padding-top: 150px;
+    }
+  .img{
+    width:150px;
+    height:50px;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://img.freepik.com/premium-photo/yellow-suitcase-with-boots-hat-sun-glasses-yellow-background-travel-tourism-concept_708636-618.jpg"
+          class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="margin-bottom: 200px; height:200px; width:600px;margin-left: 200px;">
+            <h1 style="font-size: 60px; font-family: 'Dancing Script', cursive;">FOR STORIES THAT MOVES YOU</h1>
+            
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2014/05/10/20/07/venice-341468_640.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2016/10/26/07/56/wedding-1770860_640.jpg" class="d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2022/10/05/05/40/sunset-7499759_640.jpg" class="d-block w-100"
+          alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2019/05/27/09/24/flowers-4232255_640.jpg" class="d-block w-100"
+          alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div style="position: absolute; bottom: 500px; left:500px;">
+
+    <img src="https://www.camelsandchocolate.com/wp-content/uploads/2015/07/cac-logo.svg" alt="" hieght="400px"
+      width="600px" style="padding-left: 30px;">
+    <div id="home">
+      <ul type="none" class="d-flex">
+        <li><a href="#" class="m-2">HOME</a></li>
+        <li><a href="#" class="m-2">ABOUT</a></li>
+        <li><a href="#" class="m-2">PLACES</a></li>
+        <li><a href="#" class="m-2">TOPICS</a></li>
+        <li><a href="#" class="m-2">WRITING</a></li>
+        <li><a href="#" class="m-2">WORK WITH ME</a></li>
+        <li><a href="#" class="m-2">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="icon" style="position: absolute; bottom: 700px; left:1200px;">
+    <ul type="none" class="d-flex">
+      <li><a href="#"><i class="fa-brands fa-facebook-f m-1" style="color: #ffffff;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin-in m-1" style="color: #ffffff;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-pinterest-p m-1" style="color: #ffffff;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram m-1" style="color: #ffffff;"></i></a></li>
+      <li><a href="#" class="d-flex"><i class="fa-solid fa-magnifying-glass m-1"
+            style="color: #ffffff; padding-left: 30px;"></i>
+          <p class="text-white">SEARCH</p>
+        </a></li>
+    </ul>
+  </div>
+  <div>
+    <p id="para1">I’m Kristin Luna, a journalist, photographer and content creator back living in my hometown in
+      Tennessee after traveling to more than 130 countries and, literally, living around the world. Here, you’ll find my
+      travel recommendations and recaps, marketing insight, tips for entrepreneurs and small business owners, home
+      renovation projects and much, much more.</p>
+    <div
+      style="border: 10px darkcyan double; width:200px; height:70px; text-align: center; padding-top: 10px; font-size: larger; color:darkcyan; margin-left: 730px;">
+      <p>LEARN MORE</p>
+    </div>
+  </div>
+  <div class="para2 next">
+    <h1>Join our mailing list!</h1>
+    <h3 class="m-3">Get our regular Newsletter and Blog Post notifications directly to your inbox!</h3>
+    <div class="d-flex justify-content-center m-3">
+      <form action="">
+        <input class="m-1" type="text" style="height: 50px; width: 200px;" placeholder="FIRST NAME">
+        <input class="m-1" type="text" style="height: 50px; width: 200px;" placeholder="LAST NAME">
+        <input class="m-1" type="email" style="height: 50px; width: 200px;" placeholder="EMAIL">
+        <button type="button" class="btn btn-lg"
+          style="background-color: darkcyan; color: #ffffff;height: 50px; width: 200px;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="d-flex justify-content-center" style="margin-top: 100px;">
+    <a href="#"><img src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/fp-at-work.jpg" alt=""
+        width="600px" height="350px"></a>
+    <a href="#"><img src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/fp-at-play.jpg" alt=""
+        width="600px" height="350px"></a>
+  </div>
+  <div class="d-flex justify-content-center">
+    <a href="#"><img src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/fp-at-home.jpg" alt=""
+        width="600px" height="350px"></a>
+    <a href="#"><img src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/fp-on-the-road.jpg" alt=""
+        width="600px" height="350px"></a>
+  </div>
+
+
+  </div>
+  <div id="para4">
+    <div style="color:white;text-align: center; padding:100px; width:900px; margin-left:400px;">
+      <h1 style="font-size: 60px;">WORK WITH ME</h1>
+      <p style="font-size: 40px;font-family: 'Dancing Script', cursive;">Looking for help with editorial work,
+        influencer campaigns, digital marketing or project management? I’ve got you covered.</p>
+      <button type="button" class="btn btn-warning btn-lg"
+        style="margin-right:100px ; width: 200px; height: 70px; color:white;font-size:25px;">START HERE</button>
+
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-5">
+    <div class="card m-5" style="width: 18rem; border:none; ">
+      <div class="card-body">
+        <h5 class="card-title text-center" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Nashville
+        </h5>
+      </div>
+      <img src="https://cdn.getyourguide.com/img/tour/0d6b59c047a7180d.jpeg/70.webp" class="card-img-top mt-3"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><a style="text-decoration: none;color: black;" href="#">Grand Ole Oprah Ticket</a></h5>
+        <p class="card-text mt-5"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5 (570)
+          <br>
+          <i class="fa-solid fa-clock" style="color: #04070c;"></i> Duration : 3.5 hours
+        </p>
+        </p>
+      </div>
+    </div>
+
+    <div class="card m-5" style="width: 18rem; border:none; ">
+      <div class="card-body">
+        <h5 class="card-title text-center" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Iceland</h5>
+      </div>
+      <img src="https://cdn.getyourguide.com/img/tour/2a355a5246981467.jpeg/70.webp" class="card-img-top mt-3"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><a style="text-decoration: none;color: black;" href="#">Golden Circle full day Tour</a>
+        </h5>
+        <p class="card-text mt-5"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5 (1570)
+          <br>
+          <i class="fa-solid fa-clock" style="color: #04070c;"></i> Duration : 8.5 hours
+        </p>
+        </p>
+      </div>
+    </div>
+
+    <div class="card m-5" style="width: 18rem; border:none; ">
+      <div class="card-body">
+        <h5 class="card-title text-center" style="font-family: 'Dancing Script', cursive; font-size: 40px;">New York
+        </h5>
+      </div>
+      <img src="https://cdn.getyourguide.com/img/tour/bae2d133ed4a2a06.jpeg/70.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><a style="text-decoration: none;color: black;" href="#">Manhattan Helicopter Tour</a>
+        </h5>
+        <p class="card-text mt-5"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>5 (4346) <br>
+          <i class="fa-solid fa-clock" style="color: #04070c;"></i> Duration : 12-30 minutes
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="para5" class="d-flex justify-content-center">
+    <div style="width:270px;height: 720px;">
+      <div class="card m-3" style="width: 16rem;">
+        <img src="https://www.camelsandchocolate.com/wp-content/uploads/2019/04/Tourism-Marketing-5.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title">JULY 16 2024</p>
+          <p class="card-text">INDUSTRY IS GETTING TOURISM MARKETING WRONG.</p>
+          <a href="#" class="text-warning">READ MORE</a>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 16rem;">
+        <img src="https://www.camelsandchocolate.com/wp-content/uploads/2017/06/St-George-29.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <p class="card-title">JULY 8 2024</p>
+          <p class="card-text">MILES AND POINTS FOR BEGINERS:THE BEST TRAVEL CREDIT CARDS.</p>
+          <a href="#" class="text-warning">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+    <div style=" width: 450px; height: 720px;">
+      <div class="card m-3" style="width: 27rem; height: 680px;">
+        <img src="https://www.camelsandchocolate.com/wp-content/uploads/2024/08/Murray-Kentucky-18.jpg"
+          class="card-img-top" height="400px" alt="...">
+        <div class="card-body">
+          <p class="card-title text-center">AUGUST 8 2024</p>
+          <p class="card-text text-center">A WEEKEND IN MURRAY: KENTUCKYS CHARMING COLLEGE TOWN.</p>
+          <p>I don’t know what I expected Murray to be like, but a lake community with a college campus at its center
+            and a thriving art scene anchoring it...</p><br>
+          <a href="#" class=" btn btn-lg text-white" style="background-color: darkcyan;margin-left: 120px;">READ
+            MORE</a>
+        </div>
+      </div>
+    </div>
+    <div style="width:270px;height: 720px;">
+      <div class="card m-3" style="width: 16rem;">
+        <img src="https://www.camelsandchocolate.com/wp-content/uploads/2024/06/Roland-Garros-Paris-tips-14.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title">JULY 16 2024</p>
+          <p class="card-text">INDUSTRY IS GETTING TOURISM MARKETING WRONG.</p>
+          <a href="#" class="text-warning">READ MORE</a>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 16rem;">
+        <img src="https://www.camelsandchocolate.com/wp-content/uploads/2020/10/Franklin-Tennessee-drone.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title">JULY 8 2024</p>
+          <p class="card-text">MILES AND POINTS FOR BEGINERS:THE BEST TRAVEL CREDIT CARDS.</p>
+          <a href="#" class="text-warning">READ MORE</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="para2">
+    <h1>Join our mailing list!</h1>
+    <h3 class="m-3">Get our regular Newsletter and Blog Post notifications directly to your inbox!</h3>
+    <div class="d-flex justify-content-center m-3">
+      <form action="">
+        <input class="m-1" type="text" style="height: 50px; width: 200px;" placeholder="FIRST NAME">
+        <input class="m-1" type="text" style="height: 50px; width: 200px;" placeholder="LAST NAME">
+        <input class="m-1" type="email" style="height: 50px; width: 200px;" placeholder="EMAIL">
+        <button type="button" class="btn btn-lg"
+          style="background-color: darkcyan; color: #ffffff;height: 50px; width: 200px;">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div id="para6" class="d-flex justify-content-evenly">
+    <div class="text-center" style="width:200px;height: 100px; ">
+      <a href="#" style="color:#ffffff; text-decoration: none;">
+        <p>WHATSAPP <br>
+          FACEBOOK <br>
+          INSTAGRAM <br>
+          LINKEDIN</p>
+      </a>
+    </div>
+
+    <div class="text-center" style="width:420px;height: 100px;">
+      <label for="">SEARCH</label><br>
+      <input type="text" placeholder="to seach, type or enter" style="height:50px;width:400px;">
+    </div>
+    <div class="text-center" style="width:200px;height: 100px; ">
+      <a href="#" style="color:#ffffff; text-decoration: none;">
+        <p>ADVERTISING <br>
+          MEDIA<br>
+          FAQS<br>
+          RESOURCES</p>
+      </a>
+    </div>
+
+  </div>
+
+  <div>
+    <p class="text-center pt-3">featured by</p>
+    <div class="d-flex justify-content-center">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/redbook-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/glamour-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/nat-geo-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/marie-claire-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/people-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/forbes-logo.png" alt="">
+      <img class="img m-3" src="https://www.camelsandchocolate.com/wp-content/uploads/2015/08/self-logo.png" alt="">
+    </div>
+  </div>
+
+<div style="height: 40px; width:100%; background-color: #FFD43B; color:white;text-align: center; padding-top: 10px; margin-top: 30px;">
+  <p>
+    DISCLAIMER | PRIVACY POLICY | TERMS OF USE | WEBSITE BY FURTHER BOUND | COPYRIGHT © CAMELS & CHOCOLATE 2024</p>
+</div>
+</body>
+
+</html>
